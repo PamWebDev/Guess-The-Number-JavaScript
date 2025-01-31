@@ -1,10 +1,10 @@
 let nombre = prompt('Por favor, ingresa tu nombre')
-alert(`¡Hola ${nombre}! Te damos la bienvenida a Guess the Number`)
+alert(`¡Hola ${nombre}! Te damos la bienvenida a Guess the Number. Vamos a configurar tu entorno de juego`)
 let numeroMaximoPosible = prompt('Tú decides la dificultad! Ingresa el número (rango) máximo a adivinar. Ejemplo: 10, 20, 50, etc.');
+let intentos = prompt('Bien! Ahora ingresa el número de intentos que quieres tener');
 
 let numeroSecreto = Math.floor(Math.random()*numeroMaximoPosible)+1;
 let numeroUsuario = 0;
-let intentos = 1;
 let maximosIntentos = 5;
 
 while (numeroUsuario != numeroSecreto) {
